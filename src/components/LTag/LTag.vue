@@ -12,7 +12,7 @@ import {
 } from "@/types/component";
 import { useComponentCommon } from "@/hooks/component";
 export default defineComponent({
-  name: "l-tg",
+  name: "l-tag",
   props: {
     tag: {
       type: String,
@@ -35,7 +35,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.l-tg {
+.l-tag {
   color: red;
 }
 </style>
