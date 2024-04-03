@@ -98,12 +98,19 @@ export interface ComponentProps {
 
 // 将props各个属性，转化为vue接受的props
 export const mapPropsToComponentProps = <T extends object>(props: T) => {
-  return mapValues(props, (item) => {
+  const values = mapValues(props, (item) => {
     return {
       type: (item as any).constructor,
       default: item,
     };
   });
+  return {
+    isEditer: {
+      type: Boolean,
+      default: false,
+    },
+    ...values,
+  };
 };
 
 // 过滤个别属性

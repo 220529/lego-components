@@ -10,7 +10,7 @@ export { file, pkg };
 
 const override = {
   compilerOptions: { declaration: true },
-  exclude: ["src/main.ts"],
+  exclude: ["tests/**/*.ts", "tests/**/*.tsx"],
 };
 
 export default {
