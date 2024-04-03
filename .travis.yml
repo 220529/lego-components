@@ -4,4 +4,4 @@ node_js:
   - "16" #指定node版本
 branchs:
   only:
-    - develop #指定分支有变动时才执行任务
+    - master #指定分支有变动时才执行任务
